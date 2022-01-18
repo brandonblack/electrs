@@ -87,9 +87,9 @@ dependencies = [
 
 [[package]]
 name = "bitcoin"
-version = "0.27.1"
+version = "0.28.0-rc.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9a41df6ad9642c5c15ae312dd3d074de38fd3eb7cc87ad4ce10f90292a83fe4d"
+checksum = "d21919f8ef56dced9c7a35d28dea7c344566e32a19533f9070d150ec33512152"
 dependencies = [
  "bech32",
  "bitcoin_hashes",
@@ -109,8 +109,7 @@ dependencies = [
 [[package]]
 name = "bitcoincore-rpc"
 version = "0.14.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7b8d99d58466295cb2bf72c6959b784d59f8f0d6977458d2ba3eb75c834f36c3"
+source = "git+https://github.com/romanz/rust-bitcoincore-rpc?rev=cf505ae02ecd19eaf20465ec09910e724a4ede7e#cf505ae02ecd19eaf20465ec09910e724a4ede7e"
 dependencies = [
  "bitcoincore-rpc-json",
  "jsonrpc",
@@ -122,8 +121,7 @@ dependencies = [
 [[package]]
 name = "bitcoincore-rpc-json"
 version = "0.14.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dce91de73c61f5776cf938bfa88378c5b404a70e3369b761dacbe6024fea79dd"
+source = "git+https://github.com/romanz/rust-bitcoincore-rpc?rev=cf505ae02ecd19eaf20465ec09910e724a4ede7e#cf505ae02ecd19eaf20465ec09910e724a4ede7e"
 dependencies = [
  "bitcoin",
  "serde",
@@ -964,9 +962,9 @@ checksum = "d29ab0c6d3fc0ee92fe66e2d99f700eab17a8d57d1c1d3b748380fb20baa78cd"
 
 [[package]]
 name = "secp256k1"
-version = "0.20.3"
+version = "0.21.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "97d03ceae636d0fed5bae6a7f4f664354c5f4fcedf6eef053fef17e49f837d0a"
+checksum = "ab7883017d5b21f011ef8040ea9c6c7ac90834c0df26a69e4c0b06276151f125"
 dependencies = [
  "rand",
  "secp256k1-sys",
@@ -975,9 +973,9 @@ dependencies = [
 
 [[package]]
 name = "secp256k1-sys"
-version = "0.4.1"
+version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "827cb7cce42533829c792fc51b82fbf18b125b45a702ef2c8be77fce65463a7b"
+checksum = "957da2573cde917463ece3570eab4a0b3f19de6f1646cde62e6fd3868f566036"
 dependencies = [
  "cc",
 ]
